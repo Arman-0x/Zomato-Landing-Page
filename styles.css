@@ -92,7 +92,7 @@ height: 40px;
 width: 65%;
 
     }
-    @media only screen and (max-width:600x){
+    @media only screen and (max-width:600px){
         .navbar__menu_container .user_icon{
             display:flex;
     
@@ -160,11 +160,7 @@ width:100%;
 
     }
 
-<<<<<<< HEAD
-    .we__offer__card ,img{
-=======
     .we__offer__card img{
->>>>>>> collectionsection
         width:100%;
         height:170px;
         object-fit:cover;
@@ -182,12 +178,9 @@ font-weight: 400;
 
     .we__offer_content ,p{
         font-size:15px;
-<<<<<<< HEAD
-    }
-=======
-    }
 
-
+    }
+/*Collection section*/
     .collections h1{
         font-weight: 600;
     }
@@ -210,7 +203,7 @@ font-weight: 400;
         display:flex;
         align-items:center;
         justify-content:center;
-        flex-wrap:center;
+        flex-wrap:wrap;
         gap:0.5rem;
         margin-top:1.25rem;
 
@@ -346,6 +339,7 @@ gap: 1rem;
         border:1.5px solid gray;
         outline:none;
         border-radius:5px;
+        height:19px;
 
      }
      .input_container button{
@@ -368,13 +362,166 @@ gap: 1rem;
         
      }
      .right .download_app_container div img{
-        display :flex;
-      
+        display:flex;
         gap:1rem;
-
+        margin-top: 5px;
      }
      .right .download_app_container div img{
         width:35%;
      }
 
-     
+     /*media quaries*/
+     @media only screen and (min-width:1300px){
+        .container_collections .card1 .card2 .card3.card4{
+            flex:1;
+        }
+     }
+
+     @media only screen and(max-width:1300px){
+
+        .get_the_app .semiContainer .left,
+        .get_the_app .semiContainer .right{
+            flex:1;
+        }
+        .get_the_app .semiContainer{
+            width:80%;
+        }
+     }
+     @media only screen and(max-width:900px){
+
+        .get_the_app {
+            padding:2rem 0;
+        }
+        .get_the_app .semiContainer{
+            width:95%;
+            flex-direction: column;
+        }
+     }
+   
+
+     .explore{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        gap:.7rem;
+        
+     }
+     .explore div h5{
+        padding-right: 285px;
+     }
+     .explore div select {
+        width:450px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        border-radius:solid brown;
+
+     }
+
+     .footer{
+        width:100%;
+
+     }
+     .footer_section{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin:auto;
+     }
+     .footer_section1 img{
+        width:130px;
+    
+     }
+
+     .section1_butttonContainer{
+display:flex;
+gap:1rem;
+
+
+
+     }
+.section1_butttonContainer button{
+padding:5px;
+width:90px;
+border:1px solid gray;
+border-radius: 5px;
+background-color: transparent;
+display:flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+cursor:pointer;
+
+}
+.navigation_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-columns:repeat(5,1fr);*/
+    width:80%;
+    margin:auto;
+    gap:1rem;
+    padding:3rem 0;
+
+}
+.link_container{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+
+}
+
+.link_container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer_link{
+    text-decoration: none;
+    color:grey;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+
+.footer_link:hover{
+    color:black;
+}
+
+.section_links_container{
+    background-color: black;
+    border:none;
+    width:25px;
+    height:25px;
+    border-radius:30px;
+    color:white;
+    cursor: pointer;
+}
+.section_link_container button i{
+    color:black;
+    font-size:13px;
+    display:flex;
+    justify-content: center;/*y axis*/
+    align-items: center;/*x axiis*/
+
+}
+.footer_section_logos{
+    width:100%;
+}
+
+.disclaimer{
+    width: 95%;
+    color:gray;
+    margin:auto;
+    border-top:1px solid gray;
+    padding-top:1.5rem;
+
+}
+@media only screen and (max-width:900px){
+    .navigation_container{
+        grid-template-columns:repeat(1,1fr);
+    }
+}
